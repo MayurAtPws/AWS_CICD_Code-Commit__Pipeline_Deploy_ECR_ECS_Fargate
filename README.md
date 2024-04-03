@@ -40,3 +40,5 @@
 
   
 - Create a Aws Pipeine with all default settings choosing code commit as source and ecs deploment as deploy. mention the build stage also 
+
+- make changes in the index.html to trigger the pipeline 
