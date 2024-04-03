@@ -1,0 +1,6 @@
+[
+    {
+        "name": "web-container",
+        "imageUri": "123456789012.dkr.ecr.us-east-1.amazonaws.com/web-container-project-ecr:latest"
+    }
+]

@@ -1,0 +1,32 @@
+{
+    "family": "web-container-task",
+    "containerDefinitions": [
+      {
+        "name": "web-container",
+        "image": "123456789012.dkr.ecr.us-east-1.amazonaws.com/web-container-project-ecr:latest",
+        "cpu": 256,
+        "memory": 512,
+        "essential": true,
+        "portMappings": [
+          {
+            "containerPort": 80,
+            "protocol": "tcp"
+          }
+        ]
+      }
+    ],
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::123456789012:role/Ecs-basic-task-exec",
+    "requiresCompatibilities": [
+      "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "tags": [
+      {
+        "key": "Name",
+        "value": "web-container-task"
+      }
+    ]
+  }
+  
